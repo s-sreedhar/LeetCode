@@ -1,9 +1,3 @@
-![](banner.png)
-
-## LeetCode Solutions
-
-
-
 <div align="center">
 <a href="https://s-sreedhar.github.io/LeetCode/"><img src="https://i.imgur.com/IsS5xkZ.png" width="150" title="LeetCode" alt="LeetCode"></a>
 
