@@ -3,7 +3,6 @@
 
 <span>💡 Solutions to <a href="https://leetcode.com/problemset/all/">LeetCode</a> in C++20, Java, Python, Golang, JavaScript, MySQL, and TypeScript.</span>
 <br/>
-</div>
 
 
 
