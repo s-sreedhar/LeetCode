@@ -1,117 +1,55 @@
-<<<<<<< HEAD
 site_name: LeetCode
 theme:
   name: material
-  features: 
-   - navigation.tabs
-   - navigation.sections
-   - toc.integrate
-   - navigation.top
-   - search.suggest
-   - search.highlight
-   - content.tabs.link
-   - content.code.annotation
-   - content.code.copy
-  language: en
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-        primary: teal
-        accent : purple
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-        primary: teal
-        accent: lime
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+language: en
+palette:
+  - scheme: default
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+      primary: teal
+      accent: purple
+  - scheme: slate
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+      primary: teal
+      accent: lime
 extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/s-sreedhar
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ssreedhargoud
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/sreedhar__
+    - icon: fontawesome/brands/x
+      link: https://twitter.com/s_sreedhargoud
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com/mr__sreedhar
+      link: https://instagram.com/s_sreedhargoud
 markdown_extensions:
   - pymdownx.highlight:
-      anchor_linenums: true
+    anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - admonition
   - pymdownx.arithmatex:
-      generic: true
+    generic: true
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.emoji:  # Assuming a separate emoji extension is installed
+    # emoji_index: !!python/name:materialx.emoji.twemoji  # Remove if not using
+    # emoji_generator: !!python/name:materialx.emoji.to_svg  # Remove if not using
 copyright: |
-  &copy; 2024 <a href="https://github.com/s-sreedhar" target="_blank" rel="noopner"> Sreedhar Goud</a>
-
-
-=======
-site_name: LeetCode
-theme:
-  name: material
-  features: 
-   - navigation.tabs
-   - navigation.sections
-   - toc.integrate
-   - navigation.top
-   - search.suggest
-   - search.highlight
-   - content.tabs.link
-   - content.code.annotation
-   - content.code.copy
-  language: en
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-        primary: teal
-        accent : purple
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-        primary: teal
-        accent: lime
-extra:
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/s-sreedhar
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/ssreedhargoud
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/sreedhar__
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/mr__sreedhar
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - admonition
-  - pymdownx.arithmatex:
-      generic: true
-  - footnotes
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-copyright: |
-  &copy; 2024 <a href="https://github.com/s-sreedhar" target="_blank" rel="noopner"> Sreedhar Goud</a>
-
-
->>>>>>> 9e8a6ba86ef51b24f83f0de93d7a0ab9a425eacf
+  © 2024 <a href="https://github.com/s-sreedhar" target="_blank" rel="noopner"> Sreedhar Goud</a>
