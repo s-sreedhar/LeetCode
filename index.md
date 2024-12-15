@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# LeetCode Solutions
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to my LeetCode solutions repository! 
 
-## Commands
+This website aims to provide:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* **Solutions** to LeetCode problems in various programming languages (replace with the languages you plan to use).
+* **Explanations** for each solution, helping you understand the logic and approach.
+* **Tips and tricks** for tackling different problem types effectively.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
