@@ -3,4 +3,4 @@ search:
 exclude: true
 ---
 
-## This is under mit license
+This is under mit license

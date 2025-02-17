@@ -3,9 +3,9 @@ search:
 exclude: true
 ---
 
-# Home
+Home
 
-## Solutions to LeetCode in Go
+Solutions to LeetCode in Go
 
 Explore the sections below:
 

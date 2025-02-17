@@ -3,9 +3,9 @@ search:
 exclude: true
 ---
 
-# About
+About
 
-## I m Sreedhar Goud
+I m Sreedhar Goud
 
 A full stack developer
 

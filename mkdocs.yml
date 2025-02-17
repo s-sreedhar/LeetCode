@@ -1,50 +1,71 @@
 site_name: LeetCode Solutions
 repo_url: https://github.com/s-sreedhar/Leetcode
 site_author: Sreedhar Goud
+
+nav:
+  - Home: index.md
+  - About Me: about.md
+  - License: license.md
+  # - Problems:
+  #     - Two Sum: problems/1.md
 theme:
   name: material
   # custom_dir: overrides
-  logo: favicon.png
+  logo: logo.png
   features:
     # - announce.dismiss
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
-    - navigation.tabs
+    # - navigation.tabs
     # - navigation.sections
-    - navigation.path
+    # - navigation.path
     - header.autohide
-    - navigation.sections
-    - navigation.prune
+    # - navigation.sections
+    # - navigation.prune
     - toc.integrate
-    # - toc.follow
+    - toc.follow
     # - navigation.top
     - navigation.footer
     - search.suggest
-    - search.highlight
+    # - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
   language: en
   palette:
     - scheme: default
-      primary: indigo
+      primary: lime
       accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
-      primary: deep purple
+      primary: lime
       accent: deep purple
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
 
 plugins:
-  - include-markdown
+  - search
+  # - simple_hooks
+
+# hooks:
+#   on_pre_build:
+#     - |
+#       import shutil
+#       import os
+#       def on_pre_build(config):
+#           source = os.path.abspath("../Solutions")
+#           dest = os.path.join(config['docs_dir'], "problems", "Solutions")
+#           if os.path.exists(dest):
+#               shutil.rmtree(dest)
+#           shutil.copytree(source, dest)
 
 docs_dir: docs
 extra:
+  logo: logo.png
   include_markdown:
     base_path: ".."
   consent:
