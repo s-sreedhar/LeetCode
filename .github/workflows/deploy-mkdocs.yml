@@ -3,13 +3,10 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main # Change this if your default branch is different
-  workflow_dispatch: # Allows manual triggering
+      - main
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write # Allows pushing changes
 
 jobs:
   deploy:
@@ -21,17 +18,20 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10" # Use the latest compatible Python version
+          python-version: "3.10"
 
       - name: Install dependencies
         run: |
-          pip install mkdocs-material
-          pip install mkdocs-material-extensions
-          pip install pymdown-extensions
-          pip install mkdocs-include-markdown-plugin
-          pip install mkdocs-simple-hooks
+          pip install mkdocs-material mkdocs-material-extensions
+          pip install pymdown-extensions mkdocs-include-markdown-plugin mkdocs-simple-hooks
 
-      - name: Build and Deploy MkDocs
+      - name: Deploy MkDocs
+        env:
+          GIT_USER: "github-actions[bot]"
+          GIT_EMAIL: "github-actions@github.com"
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }} # Use the secret token
         run: |
-          mkdocs build --strict
+          git config --global user.email "$GIT_EMAIL"
+          git config --global user.name "$GIT_USER"
+          git remote set-url origin https://x-access-token:${DEPLOY_TOKEN}@github.com/s-sreedhar/LeetCode.git
           mkdocs gh-deploy --force
