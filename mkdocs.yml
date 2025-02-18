@@ -6,8 +6,6 @@ nav:
   - Home: index.md
   - About Me: about.md
   - License: license.md
-  # - Problems:
-  #     - Two Sum: problems/1.md
 theme:
   name: material
   # custom_dir: overrides
@@ -17,18 +15,11 @@ theme:
     - navigation.instant.prefetch
     - navigation.instant.progress
     - announce.dismiss
-    # - navigation.tabs
-    # - navigation.sections
-    # - navigation.path
     - header.autohide
-    # - navigation.sections
-    # - navigation.prune
     - toc.integrate
     - toc.follow
-    # - navigation.top
     - navigation.footer
     - search.suggest
-    # - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
@@ -49,22 +40,6 @@ theme:
 
 plugins:
   - search
-  # - projects
-  # - optimize
-  # - offline
-  # - simple_hooks
-
-# hooks:
-#   on_pre_build:
-#     - |
-#       import shutil
-#       import os
-#       def on_pre_build(config):
-#           source = os.path.abspath("../Solutions")
-#           dest = os.path.join(config['docs_dir'], "problems", "Solutions")
-#           if os.path.exists(dest):
-#               shutil.rmtree(dest)
-#           shutil.copytree(source, dest)
 
 docs_dir: docs
 extra:
